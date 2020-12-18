@@ -131,7 +131,7 @@ def run(bandit, train_ratio = 0.9, size=100, random=False):
     return train, test
 
 if __name__ == "__main__":
-    paths = ['Data/xaa']
+    paths = ['Data/dataset_example']
     read_news_data(paths)
     bandits = [Egreedy(0.01,arms_number)]
     for b in bandits:
